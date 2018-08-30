@@ -373,7 +373,7 @@ function showTime() {
 	
 	setTimeout(showTime, 1000);
 	
-	if ((h>6) && (h<18) && (m < 60)){
+	if ((h>6) && (h<20) && (m < 60)){
 		document.querySelector("body").style["background-image"] = `url(${dayImg})`
 		document.querySelector(".article-gradient-layout").style.background = `linear-gradient(to bottom, #a8c5d1, #8a4217)`;
 	}
