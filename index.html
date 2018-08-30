@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wheater App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body onload="onloadFunc()">
+	<article class="article-gradient-layout">
+		<div class="search-bar-div">
+			<form onsubmit="return mySubmitFunction()">
+				<input type="text" placeholder="Search City">
+				<button type="submit" onclick="search()"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+		<section class="currnt-tem-detail-sec absulte">
+			<!-- <div class="absulte-information">Current Time</div>
+			<div class="absulte-information">Current Location</div>
+			<div class="absulte-information">Current Temperature</div> -->
+			<div class="time"></div>
+			<div class="div-pad">
+				<span class="temp-detail-spans" id="city-name">Karachi</span>
+			</div>
+			<div class="div-pad">
+				<span class="main-sec-icon temp-detail-spans"></span>
+				<span class="temp-detail-spans">clear</span>
+			</div>
+			<div class="div-pad">
+				<span class="temp-detail-spans">45°</span>
+				<span class="temp-detail-spans">57°</span>
+			</div>
+			<div class="wind-temp-div div-pad">
+				<span class="current-tem temp-detail-spans" id="temp">55°</span>
+			</div>
+		</section>
+		<article class="main-content-article">
+			<header>
+				<h3><span class="city-name"></span> <strong class="dt"></strong></h3>
+			</header>
+			<section class="currnt-tem-detail-sec">
+				<div class="div-pad">
+					<span class="main-sec-icon temp-detail-spans"><img src="" class="weatherIcon"></span>
+					<span class="temp-detail-spans wheather"></span>
+				</div>
+				<div class="div-pad">
+					<span class="temp-detail-spans min"></span>
+					<span class="temp-detail-spans max"></span>
+				</div>
+				<div class="wind-temp-div div-pad">
+					<span class="current-tem temp-detail-spans temp">55°</span>
+				</div>
+			</section>
+			<section class="forcast-sec">
+				<div class="forcast-top-div">
+					<span class="forcast-heading">FORECAST</span>
+				</div>
+				<div class="forecast-secnd-div">
+
+					<!-- loop on script -->
+
+				</div>
+				<div class="forecast-tem">
+
+					<!-- loop on script -->
+					
+				</div>
+			</section>
+		</article>
+	</article>
+</body>
+</html>

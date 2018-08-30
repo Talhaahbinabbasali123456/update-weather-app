@@ -1,0 +1,243 @@
+body {
+	width: 100%;
+	height: 100vh;	
+	padding: 0px;
+	margin: 0px;
+	background-position: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.absulte {
+	position: fixed;
+	bottom: 1em;
+	left: 1em;
+	text-align: left;
+	width: 100%;
+}
+.time {
+	margin: 15px 10px;
+	font-size: 25px; 
+} 
+.absulte-information {
+	padding: 5px 10px;
+	font-size: 15px;
+}
+.temp-detail-spans {
+	text-align: center;
+	padding: 0px 5px;
+}
+.search-bar-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 1em;
+}
+form {
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+input {
+	margin: 10px 0px 0px 0px;
+	padding: 10px 10px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: #af5303d1;
+	color: white;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+	border-right: 0px solid #dba76cfa;
+	outline: none;
+	cursor: pointer;
+}
+button {
+	margin: 10px 0px 0px 0px;
+	padding: 5px 10px;
+	background-color: #af5303d1;
+	color: white;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-left: 0px solid #dba76cfa;
+	outline: none;
+	cursor: pointer;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+
+}
+.article-gradient-layout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0px;
+}
+.size {
+	font-size: 25px;
+	padding: 10px;
+	font-weight: bold;
+}
+.main-content-article {
+	display: none;
+	padding-top: 50px; 
+	width: 100%;
+	background-color: #0000006e;
+}
+.currnt-tem-detail-sec {
+	color: white;
+}
+.div-pad {
+	padding: 3px 10px;
+}
+img {
+	width: 15%;
+}
+.current-tem {
+	font-size: 100px;
+}
+
+.wind-temp-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0px 1px;
+}
+.wind-gif {
+	height: 120px;
+	width: 100px;
+}
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+h3	{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+span {
+	padding: 5px 10px;
+	font-size: 20px;
+	color: white;
+}
+strong {
+	display: none;
+	font-size: 12px;
+	padding: 5px;
+}
+sub {
+	font-size: 14px;
+}
+.forcast-sec {
+	margin: 20px 10px;
+	background-color: #00000030;
+}
+.forcast-top-div {
+	padding: 7px 0px 3px 0px;
+	margin: 6px;
+	border-bottom: 1px solid #807c77;
+}
+.forcast-heading {
+	font-size: 15px;
+	padding: 0px 0px;
+}
+.forecast-secnd-div {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+	overflow-x: scroll;
+}
+.loop-span {
+	text-align: center;
+}
+.loop-span-child {
+	display: block;
+	font-size: 16px;
+}
+.forecast-days-div {
+	padding: 6px;
+	font-size: 20px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #807c77; 
+}
+.days-span-1 {
+	margin: 1px; 
+	width: 30%;
+	text-align: left;
+	padding: 0px 20px 0px 0px;
+	font-size: 16px;
+}
+.days-span-2 {
+	margin: 1px; 
+	text-align: center;
+	padding: 0px 5px;
+}
+.days-span-3 {
+	margin: 1px; 
+	width: 30%;
+	text-align: right;
+	font-size: 16px;
+	padding: 0px;
+}
+.city-name {
+	letter-spacing: 3px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 5px;
+}
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+::-webkit-scrollbar-thumb {
+	background: #ffffff;
+	border: 0px outset #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #ffe4ca;
+}
+::-webkit-scrollbar-track {
+	background: #080808;
+	border: 0px solid #ffffff;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+	background: #666666;
+}
+::-webkit-scrollbar-track:active {
+	background: #aebbb4;
+}
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+::placeholder { 
+	color: white;
+	opacity: 0.5; 
+
+	:-ms-input-placeholder {
+		color: white;
+	}
+
+	::-ms-input-placeholder { 
+		color: white;
+	}
