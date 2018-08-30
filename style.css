@@ -6,6 +6,7 @@ body {
 	background-position: left;
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
 }
 .absulte {
 	position: fixed;
@@ -92,7 +93,8 @@ button {
 	padding: 3px 10px;
 }
 img {
-	width: 15%;
+	/*width: 15%;*/
+	height: 5vh;
 }
 .current-tem {
 	font-size: 100px;
@@ -148,7 +150,7 @@ sub {
 	padding: 0px 0px;
 }
 .forecast-secnd-div {
-	display: flex;
+	display: none;
 	justify-content: left;
 	align-items: center;
 	width: 100%;

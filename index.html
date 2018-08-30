@@ -6,9 +6,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body onload="onloadFunc()">
 	<article class="article-gradient-layout">
@@ -24,18 +25,18 @@
 			<div class="absulte-information">Current Temperature</div> -->
 			<div class="time"></div>
 			<div class="div-pad">
-				<span class="temp-detail-spans" id="city-name">Karachi</span>
+				<span class="temp-detail-spans absulute-name" id="city-name">Karachi</span>
 			</div>
 			<div class="div-pad">
-				<span class="main-sec-icon temp-detail-spans"></span>
-				<span class="temp-detail-spans">clear</span>
+				<span class="main-sec-icon temp-detail-spans"><img src="" class="absulute-icon"></span>
+				<span class="temp-detail-spans absulte-des"></span>
 			</div>
 			<div class="div-pad">
-				<span class="temp-detail-spans">45°</span>
-				<span class="temp-detail-spans">57°</span>
+				<span class="temp-detail-spans absulte-min">45°</span>
+				<span class="temp-detail-spans absulte-max">57°</span>
 			</div>
 			<div class="wind-temp-div div-pad">
-				<span class="current-tem temp-detail-spans" id="temp">55°</span>
+				<span class="current-tem temp-detail-spans absulute-Temp" id="temp">55°</span>
 			</div>
 		</section>
 		<article class="main-content-article">
@@ -67,7 +68,82 @@
 				<div class="forecast-tem">
 
 					<!-- loop on script -->
-					
+					<div class='forecast-days-div'>
+						<span class='days-span-1 day-mon'>
+							<!-- days -->sd
+						</span>
+						<div class='days-span-2'>
+							<span class='main-sec-icon'>
+								<!-- icon -->
+								<img src="" class="icons-mon">
+							</span>
+						</div>
+						<span class='days-span-3 pre-temp-mon'>
+							<!-- tem min max -->
+							sda
+						</span>
+					</div>
+					<div class='forecast-days-div'>
+						<span class='days-span-1 day-tues'>
+							<!-- days -->sd
+						</span>
+						<div class='days-span-2'>
+							<span class='main-sec-icon'>
+								<!-- icon -->
+								<img src="" class="icons-tue">
+							</span>
+						</div>
+						<span class='days-span-3 pre-temp-tues'>
+							<!-- tem min max -->
+							sda
+						</span>
+					</div>
+					<div class='forecast-days-div'>
+						<span class='days-span-1 day-wed'>
+							<!-- days -->sd
+						</span>
+						<div class='days-span-2'>
+							<span class='main-sec-icon'>
+								<!-- icon -->
+								<img src="" class="icons-wed">
+							</span>
+						</div>
+						<span class='days-span-3 pre-temp-wed'>
+							<!-- tem min max -->
+							sda
+						</span>
+					</div>
+					<div class='forecast-days-div'>
+						<span class='days-span-1 day-thus'>
+							<!-- days -->sd
+						</span>
+						<div class='days-span-2'>
+							<span class='main-sec-icon'>
+								<!-- icon -->
+								<img src="" class="icons-thus">
+							</span>
+						</div>
+						<span class='days-span-3 pre-temp-thus'>
+							<!-- tem min max -->
+							sda
+						</span>
+					</div>
+					<div class='forecast-days-div'>
+						<span class='days-span-1 day-fri'>
+							<!-- days -->sd
+						</span>
+						<div class='days-span-2'>
+							<span class='main-sec-icon'>
+								<!-- icon -->
+								<img src="" class="icons-fri">
+							</span>
+						</div>
+						<span class='days-span-3 pre-temp-fri'>
+							<!-- tem min max -->
+							sda
+						</span>
+					</div>
+
 				</div>
 			</section>
 		</article>
