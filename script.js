@@ -1,4 +1,4 @@
-// let arrayOfDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+﻿// let arrayOfDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 let months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
@@ -346,41 +346,39 @@ function mySubmitFunction() {
 	return false;
 }
 function showTime() {
-	var date = new Date();
-	var h = date.getHours(); // 0 - 23
-	var m = date.getMinutes(); // 0 - 59
-	var s = date.getSeconds(); // 0 - 59
-	var session;
-	let dayImg = "img/day-time.jpeg";
-	let nightImg = "img/night.jpg";
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session;
+    let dayImg = "img/day-time.jpeg";
+    let nightImg = "img/night.jpg";
 
 
 
-	if (h > 11) {
-		session = "PM";
-	}
-	else{
-		session = "AM";
-	}
+    if (h > 11) {
+        session = "PM";
+    } else {
+        session = "AM";
+    }
 
-	h = (h < 10) ? "0" + h : h;
-	m = (m < 10) ? "0" + m : m;
-	s = (s < 10) ? "0" + s : s;
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
 
-	var time = h + ":" + m + ":" + s + " " + session;
-	document.querySelector(".time").innerText = time;
-	document.querySelector(".time").textContent = time;
-	
-	setTimeout(showTime, 1000);
-	
-	if ((h>6) && (h<20) && (m < 60)){
-		document.querySelector("body").style["background-image"] = `url(${dayImg})`
-		document.querySelector(".article-gradient-layout").style.background = `linear-gradient(to bottom, #a8c5d1, #8a4217)`;
-	}
-	else {
-		document.querySelector("body").style["background-image"] = `url(${nightImg})`
-		document.querySelector(".article-gradient-layout").style.background = `linear-gradient(to bottom, #3148a8, #6988d8)`;
-		document.querySelector("input").style["background-color"] = `#2f4399a6`;
-		document.querySelector("button").style["background-color"] = `#2f4399a6`;
-	}
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.querySelector(".time").innerText = time;
+    document.querySelector(".time").textContent = time;
+
+    setTimeout(showTime, 1000);
+
+    if (((h > 6) && (session == "AM")) || ((h < 19) && (session == "PM")) && (m < 60)) {
+        document.querySelector("body").style["background-image"] = `url(${dayImg})`
+        document.querySelector(".article-gradient-layout").style.background = `linear-gradient(to bottom, #a8c5d1, #8a4217)`;
+    } else {
+        document.querySelector("body").style["background-image"] = `url(${nightImg})`
+        document.querySelector(".article-gradient-layout").style.background = `linear-gradient(to bottom, #3148a8, #6988d8)`;
+        document.querySelector("input").style["background-color"] = `#2f4399a6`;
+        document.querySelector("button").style["background-color"] = `#2f4399a6`;
+    }
 }
