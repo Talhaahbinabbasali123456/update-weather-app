@@ -84,6 +84,7 @@ button {
 	display: none;
 	padding-top: 50px; 
 	width: 100%;
+	height: 100vh;
 	background-color: #0000006e;
 }
 .currnt-tem-detail-sec {
